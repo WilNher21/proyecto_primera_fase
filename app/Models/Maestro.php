@@ -10,7 +10,7 @@ class Maestro extends Model
     use HasFactory;
 
     public function grados(){
-        return $this->belongToMany('App\Models\Grado');
+        return $this->belongsToMany('App\Models\Grado');
     }
 
     

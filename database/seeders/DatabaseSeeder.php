@@ -3,9 +3,6 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\Estudiante;
-use App\Models\Maestro;
-use App\Models\Grado;
 
 class DatabaseSeeder extends Seeder
 {
@@ -18,5 +15,10 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 
+        $this->call([
+            GradoSeeder::class,
+            MaestroSeeder::class,
+            EstudianteSeeder::class, 
+        ]);
     }
 }
