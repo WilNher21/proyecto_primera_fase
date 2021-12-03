@@ -9,7 +9,7 @@ class Estudiante extends Model
 {
     use HasFactory;
 
-    public function grado(){
+    public function grado(){ 
         return $this->belongTo('App\Models\Grado');
     }
 }
